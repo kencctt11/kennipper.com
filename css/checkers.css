@@ -1,0 +1,55 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#board {
+    display: grid;
+    width: 90vmin; /* Relative to viewport size */
+    height: 90vmin; /* Relative to viewport size */
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border: 2px solid #333;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark {
+    background-color: brown;
+}
+
+.light {
+    background-color: beige;
+}
+
+.piece {
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth movement */
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color: black;
+}
+
+.selected {
+    outline: 2px solid yellow;
+}
