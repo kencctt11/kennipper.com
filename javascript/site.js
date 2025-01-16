@@ -24,7 +24,7 @@ function sendMail(){
         email: document.getElementById("email").value ,
         message: document.getElementById("message").value 
     };
-    const serviceId = "service_c17ay9u";
+    const serviceId = "service_34x6egr";
     const templateId = "template_6my0v8m";
 
     emailjs
